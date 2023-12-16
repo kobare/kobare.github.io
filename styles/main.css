@@ -7273,3 +7273,45 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+.job-role {
+  padding-top: 20px;
+}
+
+
+.intro-p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p, img {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        flex-direction: column;
+      }
+
+      p {
+        order: 1; /* Move the paragraph below the image in the column layout */
+      }
+
+      img {
+        order: 2; /* Move the image above the paragraph in the column layout */
+      }
+    }
